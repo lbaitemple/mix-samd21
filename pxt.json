@@ -1,23 +1,29 @@
 {
-    "name": "mix-samd21",
-    "description": "",
+    "name": "mixer-samd",
+    "description": "The music library with a mixer",
     "dependencies": {
-        "sparkfun-samd21-dev-breakout": "*"
+        "core": "*"
     },
     "files": [
-        "main.blocks",
-        "main.ts",
-        "README.md"
+        "SoundOutput.h",
+        "sound.cpp",
+        "melody.h",
+        "melody.cpp",
+        "melody.ts",
+        "piano.ts",
+        "legacy.ts",
+        "ns.ts",
+        "targetoverrides.ts",
+        "music.ts",
+        "pxtparts.json",
+        "headphone.svg"
     ],
     "testFiles": [
         "test.ts"
     ],
+    "public": true,
     "targetVersions": {
         "target": "0.15.66",
-        "targetId": "maker"
-    },
-    "supportedTargets": [
-        "maker"
-    ],
-    "preferredEditor": "blocksprj"
+        "pxt": "8.1.1"
+    }
 }
