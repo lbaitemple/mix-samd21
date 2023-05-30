@@ -1,0 +1,23 @@
+{
+    "name": "mix-samd21",
+    "description": "",
+    "dependencies": {
+        "sparkfun-samd21-dev-breakout": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "0.15.66",
+        "targetId": "maker"
+    },
+    "supportedTargets": [
+        "maker"
+    ],
+    "preferredEditor": "blocksprj"
+}
