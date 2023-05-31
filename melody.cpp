@@ -5,7 +5,7 @@
 //#define LOG DMESG
 #define LOG NOLOG
 
-namespace music {
+namespace newmusic {
 
 SINGLETON(WSynthesizer);
 
