@@ -128,7 +128,7 @@ enum BeatFraction {
     Triplet = 128
 }
 
-namespace music {
+namespace newmusic {
 
     let beatsPerMinute: number;
 
