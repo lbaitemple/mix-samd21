@@ -1,4 +1,4 @@
-enum Note {
+enum NewNote {
     //% blockIdentity=music.noteFrequency enumval=262
     C = 262,
     //% block=C#
@@ -109,7 +109,7 @@ enum Note {
     B5 = 988,
 }
 
-enum BeatFraction {
+enum NewBeatFraction {
     //% block=1
     Whole = 1,
     //% block="1/2"
@@ -172,18 +172,18 @@ namespace newmusic {
     //% blockId=device_beat block="%fraction|beat"
     //% weight=9 blockGap=8
     //% group="Tempo"
-    export function beat(fraction?: BeatFraction): number {
+    export function beat(fraction?: NewBeatFraction): number {
         init();
         if (fraction == null) fraction = BeatFraction.Whole;
         let beat = 60000 / beatsPerMinute;
         switch (fraction) {
-            case BeatFraction.Half: beat /= 2; break;
-            case BeatFraction.Quarter: beat /= 4; break;
-            case BeatFraction.Eighth: beat /= 8; break;
-            case BeatFraction.Sixteenth: beat /= 16; break;
-            case BeatFraction.Double: beat *= 2; break;
-            case BeatFraction.Breve: beat *= 4; break;
-            case BeatFraction.Triplet: beat /= 3; break;
+            case NewBeatFraction.Half: beat /= 2; break;
+            case NewBeatFraction.Quarter: beat /= 4; break;
+            case NewBeatFraction.Eighth: beat /= 8; break;
+            case NewBeatFraction.Sixteenth: beat /= 16; break;
+            case NewBeatFraction.Double: beat *= 2; break;
+            case NewBeatFraction.Breve: beat *= 4; break;
+            case NewBeatFraction.Triplet: beat /= 3; break;
         }
         return beat >> 0;
     }
