@@ -1,5 +1,5 @@
 //% deprecated=true hidden=true
-enum Sounds {
+enum NewSounds {
     //% block="power up"
     PowerUp,
     //% block="power down"
@@ -31,21 +31,21 @@ namespace newmusic {
     //% name.fieldOptions.columns=3
     export function sounds(name: Sounds): string {
         switch (name) {
-            case Sounds.BaDing:
+            case NewSounds.BaDing:
                 return 'b5:1 e6:3';
-            case Sounds.Wawawawaa:
+            case NewSounds.Wawawawaa:
                 return 'e3:3 r:1 d#:3 r:1 d:4 r:1 c#:8';
-            case Sounds.JumpUp:
+            case NewSounds.JumpUp:
                 return 'c5:1 d e f g';
-            case Sounds.JumpDown:
+            case NewSounds.JumpDown:
                 return 'g5:1 f e d c';
-            case Sounds.PowerUp:
+            case NewSounds.PowerUp:
                 return 'g4:1 c5 e g:2 e:1 g:3';
-            case Sounds.PowerDown:
+            case NewSounds.PowerDown:
                 return 'g5:1 d# c g4:2 b:1 c5:3';
-            case Sounds.MagicWand:
+            case NewSounds.MagicWand:
                 return 'F#6:1-300 G# A# B C7# D# F F# G# A# B:6'; //A#7:1-200 A:1 A#7:1 A:1 A#7:2
-            case Sounds.Siren:
+            case NewSounds.Siren:
                 return 'a4 d5 a4 d5 a4 d5';
             default:
                 return '';
