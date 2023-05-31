@@ -18,7 +18,7 @@ enum Sounds {
     Siren
 }
 
-namespace music {
+namespace newmusic {
     /**
      * Get the melody string for a built-in melody.
      * @param name the note name, eg: Note.C
