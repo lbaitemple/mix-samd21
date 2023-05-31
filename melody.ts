@@ -1,4 +1,4 @@
-enum MusicOutput {
+enum NewMusicOutput {
     AutoDetect = 0,
     Buzzer = 1,
     HeadPhones = 2,
@@ -20,7 +20,7 @@ namespace music {
     function stopPlaying() { }
 
     //% shim=music::forceOutput
-    export function forceOutput(buf: MusicOutput) { }
+    export function forceOutput(buf: NewMusicOutput) { }
 
     let globalVolume: number = null
 
