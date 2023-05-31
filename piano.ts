@@ -1,4 +1,4 @@
-namespace music {
+namespace newmusic {
     /**
      * Get the frequency of a note.
      * @param name the note name, eg: Note.C
